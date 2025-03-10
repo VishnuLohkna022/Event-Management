@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Event Management</h1>
+      <nav>
+        <ul>
+          <li><a href="#upcoming-events">Upcoming Events</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Upcoming Events Section -->
+  <section id="upcoming-events" class="section">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-card">
+        <h3>Tech Conference 2025</h3>
+        <p>Date: 25th April 2025</p>
+        <p>Location: GD Goenka University, Sohna</p>
+        <div id="countdown"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP Form Section -->
+  <section id="rsvp" class="section">
+    <div class="container">
+      <h2>RSVP for the Event</h2>
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" max="200" placeholder="How many guests?" required>
+        
+        <button type="submit">Submit RSVP</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Event Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
